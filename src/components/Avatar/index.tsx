@@ -1,5 +1,7 @@
 import React from 'react';
 
+import AvatarMenu from './AvatarMenu';
+
 import {
   Container,
   Dot,
@@ -7,11 +9,18 @@ import {
 } from './styles';
 
 const Avatar: React.FC = () => {
+  function menuActive () {
+    if (window.handleIsAvatarMenuActive)
+    window.handleIsAvatarMenuActive();
+  };
+
   return (
-    <Container>
+    <Container onClick={menuActive}>
       <UserIcon />
 
       <Dot />
+
+      <AvatarMenu />
     </Container>
   );
 };

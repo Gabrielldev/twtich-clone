@@ -22,6 +22,8 @@ export const Container = styled.div`
   -moz-box-shadow: 0px 0px 66px -2px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 66px -2px rgba(0,0,0,0.75);
 
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;

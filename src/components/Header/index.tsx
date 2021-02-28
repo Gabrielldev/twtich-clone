@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import HeaderMenu from './HeaderMenu';
 import Avatar from '../Avatar';
 import Input from '../Input';
 
@@ -24,6 +25,11 @@ import {
 } from './styles';
 
 const Header: React.FC = () => {
+  function menuActive () {
+    if (window.handleIsHeaderMenuActive)
+    window.handleIsHeaderMenuActive();
+  };
+
   return (
     <Container>
       <LeftWrapper>
@@ -64,9 +70,11 @@ const Header: React.FC = () => {
         <LinkWrapper href="/">Música</LinkWrapper>
 
         <IconWrapper>
-          <DotsIcon />
+          <DotsIcon onClick={menuActive} />
 
           <span>Mais</span>
+
+          <HeaderMenu />
         </IconWrapper>
       </LeftWrapper>
 

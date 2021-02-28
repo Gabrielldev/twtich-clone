@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 30px;
   height: 30px;
 
+  position: relative;
   cursor: pointer;
   border-radius: 50%;
   background: var(--violet);
