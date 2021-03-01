@@ -43,5 +43,6 @@ export default createGlobalStyle`
     --white: #FFF;
     --black: #000;
     --violet: violet;
+    --title-gray: #ADADB8;
   }
 `;

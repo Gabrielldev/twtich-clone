@@ -1,0 +1,35 @@
+import styled from 'styled-components';
+import { FlexItemProps } from './types';
+
+export const Container = styled.div<FlexItemProps>(({
+  width,
+  height,
+  flexDirection,
+  alignItems,
+  justify,
+  border,
+  borderTop,
+  borderBottom,
+  borderLeft,
+  borderRight,
+  background,
+  color,
+  margin,
+  padding,
+}: FlexItemProps) => ({
+  width,
+  height,
+  display: 'flex',
+  flexDirection,
+  alignItems,
+  justifyContent: justify,
+  border,
+  borderTop,
+  borderBottom,
+  borderLeft,
+  borderRight,
+  background,
+  color,
+  margin,
+  padding,
+}));
