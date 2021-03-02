@@ -6,5 +6,7 @@ export type TextItemProps = {
   margin?: string | number;
   padding?: string | number;
   textTransform?: any;
+  textDecoration?: any;
   content?: string;
+  cursor?: any;
 };

@@ -9,6 +9,8 @@ export const Container = styled.div<TextItemProps>(({
   margin,
   padding,
   textTransform,
+  textDecoration,
+  cursor,
 }: TextItemProps) => ({
   fontSize,
   fontWeight,
@@ -17,4 +19,6 @@ export const Container = styled.div<TextItemProps>(({
   margin,
   padding,
   textTransform,
+  textDecoration,
+  cursor,
 }));

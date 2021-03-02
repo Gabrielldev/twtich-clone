@@ -6,7 +6,7 @@ import { Container } from './styles';
 const TextItem: React.FC<TextItemProps> = ({
   fontSize, fontWeight, lineHeight,
   color, margin, padding, textTransform,
-  content,
+  content, textDecoration, cursor,
 }) => {
   return (
     <Container
@@ -18,6 +18,8 @@ const TextItem: React.FC<TextItemProps> = ({
       padding={padding}
       textTransform={textTransform}
       content={content}
+      textDecoration={textDecoration}
+      cursor={cursor}
     >
       {content}
     </Container>
