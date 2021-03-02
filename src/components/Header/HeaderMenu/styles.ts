@@ -2,17 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   .open {
-    opacity: 1;
-    z-index: 10;
-
-    transition: 0.2s;
+    display: initial;
   };
 
   .close {
-    opacity: 0;
-    z-index: -10;
-
-    transition: 0.2s;
+    display: none;
   };
 
   .border_top {

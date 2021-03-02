@@ -3,12 +3,8 @@ import styled from 'styled-components';
 import { Search } from '@styled-icons/evaicons-solid/Search';
 
 export const Container = styled.div`
-  display: none;
+  display: flex;
   align-items: center;
-
-  @media (min-width: 1024px) {
-    display: flex;
-  }
 
   > input {
     width: 100%;

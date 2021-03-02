@@ -10,7 +10,13 @@ export type FlexItemProps = {
   borderLeft?: string;
   borderRight?: string;
   background?: string;
+  position?: any;
+  top?: number;
+  bottom?: number;
+  left?: number;
+  right?: number;
   color?: string;
   margin?: string | number;
   padding?: string | number;
+  className?: any;
 };

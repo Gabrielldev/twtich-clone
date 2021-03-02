@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SearchMenu from './SearchMenu';
 import HeaderMenu from './HeaderMenu';
 import Avatar from '../Avatar';
 import Input from '../Input';
@@ -28,6 +29,11 @@ const Header: React.FC = () => {
   function menuActive () {
     if (window.handleIsHeaderMenuActive)
     window.handleIsHeaderMenuActive();
+  };
+
+  function searchMenuActive () {
+    if (window.handleIsSearchMenuActive)
+    window.handleIsSearchMenuActive();
   };
 
   return (
@@ -78,13 +84,17 @@ const Header: React.FC = () => {
         </IconWrapper>
       </LeftWrapper>
 
-      <Input />
+      <div className="input_visible">
+        <Input />
+      </div>
 
       <RightWrapper>
         <IconWrapper>
-          <SearchIcon />
+          <SearchIcon onClick={searchMenuActive} />
 
           <span>Buscar</span>
+
+          <SearchMenu />
         </IconWrapper>
 
         <IconWrapper>

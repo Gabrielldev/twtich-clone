@@ -14,6 +14,11 @@ export const Container = styled.div<FlexItemProps>(({
   borderRight,
   background,
   color,
+  position,
+  top,
+  bottom,
+  left,
+  right,
   margin,
   padding,
 }: FlexItemProps) => ({
@@ -32,4 +37,9 @@ export const Container = styled.div<FlexItemProps>(({
   color,
   margin,
   padding,
+  position,
+  top,
+  bottom,
+  left,
+  right,
 }));
