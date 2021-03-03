@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: 100vh;
   padding: 60px 0 10px 0;
 
-  background: var(--header);
+  background: #1F1F23;
   
   position: fixed;
   left: 0;

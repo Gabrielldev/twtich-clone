@@ -4,6 +4,8 @@ export type FlexItemProps = {
   flexDirection?: any;
   alignItems?: string;
   justify?: string;
+  flexWrap?: any;
+  flex?: string | number;
   border?: string;
   borderTop?: string;
   borderBottom?: string;

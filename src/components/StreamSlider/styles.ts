@@ -14,7 +14,7 @@ export const Container = styled.div`
   -moz-box-shadow: 0px 0px 56px -13px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 56px -13px rgba(0,0,0,0.75);
 
-  @media (min-width: 850px) {
+  @media (min-width: 825px) {
     width: 750px;
   };
 
@@ -63,9 +63,9 @@ export const RightWrapper = styled.div`
 
   display: none;
 
-  background: #202020;
+  background: #17171A;
 
-  @media (min-width: 850px) {
+  @media (min-width: 825px) {
     display: initial;
   };
 `;

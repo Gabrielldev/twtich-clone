@@ -30,17 +30,15 @@ export default createGlobalStyle`
     max-width: 100vw;
     max-height: 100vh;
 
-    /* overflow-x: hidden; */
-    /* overflow-y: auto; */
-
     color: var(--white);
     background: var(--background);
   }
 
   :root {
     --background: #0E0E10;
-    --header: #151515;
+    --header: #18181B;
     --purple: #772CE8;
+    --purple-light: #9070FF;
     --white: #FFF;
     --black: #000;
     --violet: violet;

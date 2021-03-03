@@ -9,4 +9,5 @@ export type TextItemProps = {
   textDecoration?: any;
   content?: string;
   cursor?: any;
+  className?: string;
 };
