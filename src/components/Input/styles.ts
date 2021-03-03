@@ -3,12 +3,8 @@ import styled from 'styled-components';
 import { Search } from '@styled-icons/evaicons-solid/Search';
 
 export const Container = styled.div`
-  display: none;
+  display: flex;
   align-items: center;
-
-  @media (min-width: 1024px) {
-    display: flex;
-  }
 
   > input {
     width: 100%;
@@ -26,7 +22,7 @@ export const Container = styled.div`
     border: 2px solid transparent;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    background: rgba(80, 80, 80, 1);
+    background: rgba(70, 70, 72);
     
     &:hover {
       border: 2px solid rgba(200, 200, 200, 0.2);
@@ -52,7 +48,7 @@ export const SearchContainer = styled.button`
   align-items: center;
   justify-content: center;
 
-  background: #303030;
+  background: rgba(41, 41, 43);
 `;
 
 // --ICONS-- //
@@ -60,5 +56,5 @@ export const SearchIcon = styled(Search)`
   width: 16px;
   height: 16px;
 
-  color: #707070;
+  color: #545456;
 `;

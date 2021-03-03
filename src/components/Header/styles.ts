@@ -18,17 +18,26 @@ export const Container = styled.div`
   padding: 0 10px;
 
   background: var(--header);
-  -webkit-box-shadow: 0px 0px 66px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 66px -2px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 66px -2px rgba(0,0,0,0.75);
 
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   
   .border_right { border-right: 1px solid #303030; }
+
+  .input_visible {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
 
   .icon_hidden {
     @media (min-width: 1024px) {
@@ -93,6 +102,10 @@ export const LinkWrapper = styled.a`
 
   @media (min-width: 1024px) {
     display: initial;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 1.05rem;
   }
 `;
 
